@@ -157,8 +157,10 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
 
 ## why AWS DynamoDB is chosen.
 
-DynamoDB a été choisi pour plusieurs raisons. Tout d'abord, il s'agit d'un service de base de données NoSQL entièrement géré par Amazon web services(AWS); offrant une entière évolutivité et une disponibilité élévées. DynamoDB est conçu pour gérer de très grand volumes de données et supporter des charges de travail à fort trafique, grâce à sa répartition automatique et à sa réplication multi-région.
+DynamoDB was chosen for several reasons. Firstly, it is a NoSQL database service fully managed by Amazon Web Services (AWS), offering full scalability and high availability. DynamoDB is designed to manage very large volumes of data and support high-traffic workloads, thanks to its automatic dispatching and multi-region replication.
 
-En termes de prix, DynamoDB propose un modèle de tarification flexible basé sur la capacité provisionnée ou sur demande, permetta,t de payer uniquement pour les ressourses utilisées.De plus, AWS propose des calculatrices de prix pour estimer les coûts associés à l'utilisation de DynamoDB.
+In terms of pricing, DynamoDB offers a flexible pricing model based on provisioned or on-demand capacity, so you only pay for the resources you use, and AWS offers price calculators to estimate the costs associated with using DynamoDB.
 
-En comparant avec Azure, il est important de noter que DynamoDB offre une intégration transparente avec d'autres services AWS, tels que Lambda et CloudZatch, permettant une architecture cloud cohérente. Bien qu'Azure propose également des options de bases de données
+When comparing with Azure, it is important to note that DynamoDB offers seamless integration with other AWS services, such as Lambda and CloudZatch, enabling a coherent cloud architecture. Although Azure also offers database options
+
+Translated with www.DeepL.com/Translator (free version)
