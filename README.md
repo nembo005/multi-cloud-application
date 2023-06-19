@@ -157,11 +157,11 @@ Your goal is to select a cloud provider for each of the 4 required services - SQ
 
 ## Why AWS DynamoDB is chosen.
 
-DynamoDB was chosen for several reasons. Firstly, it is a NoSQL database service fully managed by Amazon Web Services (AWS), offering full scalability and high availability. DynamoDB is designed to manage very large volumes of data and support high-traffic workloads, thanks to its automatic dispatching and multi-region replication.
+AWS DynamoDB, a preferred choice for many, stands out due to its exceptional array of features, affordability, and robust design. As a fully-managed, serverless database, it eliminates the operational overhead, allowing developers to focus on application development. Its multi-region, multi-active functionality guarantees global scalability, high availability, and strong durability, making it apt for mission-critical applications.
 
-In terms of pricing, DynamoDB offers a flexible pricing model based on provisioned or on-demand capacity, so you only pay for the resources you use, and AWS offers price calculators to estimate the costs associated with using DynamoDB.
+Security is integral to DynamoDB, with features like encryption at rest, VPC endpoints, IAM roles, and fine-grained access control. Its in-built backup and restore feature adds an additional layer of data resilience. The service offers automatic and seamless scalability in response to traffic patterns, optimizing resource usage and operational costs.
 
-When comparing with Azure, it is important to note that DynamoDB offers seamless integration with other AWS services, such as Lambda and CloudZatch, enabling a coherent cloud architecture. Although Azure also offers database options
+Providing single-digit millisecond latency, DynamoDB ensures consistent, rapid data access. It's flexible, supporting both key-value and document data models, simplifying data management. The unique On-Demand capacity mode can cater to thousands of requests per second sans capacity planning, making it highly cost-efficient for unpredictable workloads. Its reliability and fault-tolerance make DynamoDB an excellent choice for organizations seeking high-performing, cost-effective data management solutions.
 
 ## Github project link
 
