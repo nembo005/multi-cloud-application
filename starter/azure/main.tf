@@ -33,12 +33,13 @@ resource "azurerm_container_group" "udacity" {
 
 resource "azurerm_mssql_server" "udacity_app" {
   name                         = "udacity-nembo-azure-sql"
-  resource_group_name          = data.azurerm_resource_group.udacity
-  location                     = data.azurerm_resource_group.udacity
+  resource_group_name          = data.azurerm_resource_group.udacity.name
+  location                     = data.azurerm_resource_group.udacity.location
   version                      = "12.0"
   administrator_login          = "AdminMj"
   administrator_login_password = "R3s0urc3!MSSQL#2023"
 }
+
  resource "azurerm_service_plan" "udacity" {
   name                = "udacity-nembo-app-service-plan"
   location            = data.azurerm_resource_group.udacity.location
