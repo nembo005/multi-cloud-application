@@ -39,32 +39,31 @@ resource "azurerm_mssql_server" "udacity_app" {
   administrator_login          = "AdminMj"
   administrator_login_password = "R3s0urc3!MSSQL#2023"
 }
-  resource "azurerm_service_plan" "udacity" {
+ resource "azurerm_service_plan" "udacity" {
   name                = "udacity-nembo-app-service-plan"
   location            = data.azurerm_resource_group.udacity.location
   resource_group_name = data.azurerm_resource_group.udacity.name
-  
+
   sku_name = "B1"
-  os_type  = "Windows"
+  os_type  = "Linux"
 
   tags = {
     environment = "udacity"
   }
 }
 
-
-resource "azurerm_windows_web_app" "udacity" {
+resource "azurerm_linux_web_app" "udacity" {
   name                = "udacity-nembo-azure-dotnet-app"
   location            = data.azurerm_resource_group.udacity.location
   resource_group_name = data.azurerm_resource_group.udacity.name
   service_plan_id     = azurerm_service_plan.udacity.id
-  
+
   site_config {
     always_on = true
   }
-  
+
   app_settings = {
     "WEBSITE_RUN_FROM_PACKAGE" = "1"
-    "net_framework_version"="v5.0"
-}
+    "linux_fx_version" = "DOTNETCORE|5.0"
+  }
 }
